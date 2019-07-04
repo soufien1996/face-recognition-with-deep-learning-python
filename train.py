@@ -105,7 +105,7 @@ print("Saved model to disk")
 
 # and use the 10% data as we have already splited to test the new model
 scores = model.evaluate(X_test, Y_test, verbose=0)
-print scores
+print(scores)
 print("%s: %.2f%%" % (model.metrics_names[1], scores[1]*100))
 
 
